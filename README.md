@@ -4,6 +4,8 @@ A Flask + Next.js application that captures GitHub webhook events (Push, Pull Re
 
 ---
 
+![frotend ui ](./image/frotend_ui_screenchot.png)
+
 ## Quick Setup
 
 ### Prerequisites
