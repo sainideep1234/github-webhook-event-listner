@@ -1,0 +1,14 @@
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: github-webhook-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=github-webhooks
+    restart: unless-stopped
+
+volumes:
+  mongodb_data:
